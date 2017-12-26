@@ -10,15 +10,71 @@
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mapping</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">create-drop</property>
 
 		<property name="show_sql">true</property>
-
-		<mapping class="bidiret_mappingdemo.EmployeePojoClass"></mapping>
-		<mapping class="bidiret_mappingdemo.AddressClass"></mapping>
+         
+         <mapping class="manyTomany_Uni.Students"></mapping>
+		<mapping class="manyTomany_Uni.Course"></mapping>
 		
-		<mapping class="HibernateMapping.MappingDemo.EmployeePojoClass"></mapping>
-		<mapping class="HibernateMapping.MappingDemo.AddressClass"></mapping>
+		 <mapping class="manyTomany_Uni.StudentsInfo"></mapping>
+		<mapping class="manyTomany_Uni.CourseInfo"></mapping>
+		
+		 <mapping class="manyTomany_Uni.StudentsDetail"></mapping>
+		<mapping class="manyTomany_Uni.CourseDetail"></mapping>
+		
+		 
+        <!--  <mapping class="manyTomany_Bidirect.Book5"></mapping>
+		<mapping class="manyTomany_Bidirect.Author5"></mapping> -->
+         
+		<!-- <mapping class="bidiret_mappingdemo.EmployeePojoClass"></mapping>
+		<mapping class="bidiret_mappingdemo.AddressClass"></mapping> -->
+		
+		<!-- <mapping class="onetomany.Book"></mapping>
+		<mapping class="onetomany.Author"></mapping> -->
+		
+		<!-- <mapping class="manytoOne_Bidirect.Customer1"></mapping>
+		<mapping class="manytoOne_Bidirect.Vendor1"></mapping> -->
+		
+		<!-- <mapping class="manytoOne_Bidirect.CustomerInfo"></mapping>
+		<mapping class="manytoOne_Bidirect.VendorInfo"></mapping> -->
+		
+		<!-- <mapping class="manytoOne_Bidirect.CustomerDetail"></mapping>
+		<mapping class="manytoOne_Bidirect.VendorDetail"></mapping>
+		 -->
+		<!-- <mapping class="manyToOne_Unidirect.Customer"></mapping>
+		<mapping class="manyToOne_Unidirect.Vendor"></mapping> -->
+		
+		
+		<!-- <mapping class="manyToOne_Unidirect.CustomerDetail"></mapping>
+		<mapping class="manyToOne_Unidirect.VendorDetail"></mapping> -->
+		
+		<!-- <mapping class="manyToOne_Unidirect.CustomerInfo"></mapping>
+		<mapping class="manyToOne_Unidirect.VendorInfo"></mapping> -->
+		
+		<!-- <mapping class="oneToMany_Bidirect.CollegeInfo"></mapping>
+		<mapping class="oneToMany_Bidirect.StudentInfo"></mapping> -->
+		
+		 <!-- <mapping class="oneToMany_Bidirect.College"></mapping>
+		<mapping class="oneToMany_Bidirect.Student"></mapping>
+		 -->
+		<!--
+		<mapping class="oneToMany_Bidirect.CollegeDetail"></mapping>
+		<mapping class="oneToMany_Bidirect.StudentDetail"></mapping>
+		
+		<mapping class="oneToMany_Unidirect.BookDetail"></mapping>
+		<mapping class="oneToMany_Unidirect.AuthorDetail"></mapping>
+		
+		<mapping class="oneToMany_Unidirect.Book"></mapping>
+		<mapping class="oneToMany_Unidirect.Author"></mapping>
+		
+	    <mapping class="oneToMany_Unidirect.BookInfo"></mapping>
+		<mapping class="oneToMany_Unidirect.AuthorInfo"></mapping> -->
+		
+	<!-- 	<mapping class="HibernateMapping.MappingDemo.AddressClass"></mapping> -->
+		
+	<!-- 	<mapping class="HibernateMapping.MappingDemo.EmployeePojoClass"></mapping>
+		<mapping class="HibernateMapping.MappingDemo.AddressClass"></mapping> -->
 </session-factory>
 	
 </hibernate-configuration>

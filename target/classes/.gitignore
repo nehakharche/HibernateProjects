@@ -1,3 +1,9 @@
-/HibernateMapping/
-/bidiret_mappingdemo/
 /hibernate.cfg.xml
+/manyToOne_Unidirect/
+/manyTomany_Bidirect/
+/manyTomany_Uni/
+/manytoOne_Bidirect/
+/oneToMany_Bidirect/
+/oneToMany_Unidirect/
+/oneToOne_Unidirect/
+/onetoone_bidirect/
